@@ -1,7 +1,3 @@
-#map {
-  width: 100%;
-  height: 400px;
-}
 body {
   background-color: white;
 }
@@ -78,4 +74,8 @@ a {
 .myEatUp {
   display: inline-block;
   margin: 0;
+}
+#map {
+  width: 100%;
+  height: 400px;
 }
