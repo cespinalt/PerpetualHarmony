@@ -15,7 +15,10 @@ import FormGroup from 'react-bootstrap/lib/FormGroup';
 import FormControl from 'react-bootstrap/lib/FormControl';
 import Button from 'react-bootstrap/lib/Button';
 import auth from '../auth.js';
+
+>>>>>>> Resolve merge conflict
 import CreateEatup from './CreateEatup.jsx';
+import Map from './MapContainer.jsx';
 
 class Home extends React.Component {
   constructor(props) {
@@ -41,10 +44,10 @@ class Home extends React.Component {
     if (this.props.data.currentEatup) {
       console.log('HOME - current eatup', this.props.data.currentEatup);
     }
-
     return (
-      <div className="container">
-      <div className="head">
+      <div className="container" id="map">
+        <Map eatUps = {this.props.data.allEatups} />
+      <div className='head'>
         <FormGroup>
            <FormControl
               type="text"
