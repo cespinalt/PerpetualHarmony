@@ -16,7 +16,6 @@ import FormControl from 'react-bootstrap/lib/FormControl';
 import Button from 'react-bootstrap/lib/Button';
 import auth from '../auth.js';
 
->>>>>>> Resolve merge conflict
 import CreateEatup from './CreateEatup.jsx';
 import Map from './MapContainer.jsx';
 
@@ -42,11 +41,12 @@ class Home extends React.Component {
 
   render() {
     if (this.props.data.currentEatup) {
-      console.log('HOME - current eatup', this.props.data.currentEatup);
+      console.dir('HOME - current eatup', this.props.data.currentEatup);
     }
+    console.log(this.props.data.sessions);
     return (
       <div className="container" id="map">
-        <Map eatUps = {this.props.data.allEatups} />
+        <Map eatUps={this.props.data.allEatups} />
       <div className='head'>
         <FormGroup>
            <FormControl
